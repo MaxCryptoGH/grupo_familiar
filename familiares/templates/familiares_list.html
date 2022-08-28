@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    Lista de familiares:
-    {% for per_familia in familiares %}
-    {{ per_familia.nombre }}
-    {{ per_familia.fechaNac }}
-    {{ per_familia.dni }}
-
-    {% endfor %}
+    <table class="familiares"
+        <tr>
+            Lista de familiares:
+            {% for per_familia in familiares %}
+            <p>{{ per_familia.nombre }}</p>
+            {{ per_familia.fechaNac }}
+            {{ per_familia.dni }}
+            {% endfor %}
+        </tr>
+    </table>
 </body>
 </html>
