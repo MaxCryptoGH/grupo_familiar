@@ -9,11 +9,11 @@
 <body>
     <table class="familiares"
         <tr>
-            Lista de familiares:
+           <b>Lista de familiares:</b>
             {% for per_familia in familiares %}
-            <p>{{ per_familia.nombre }}</p>
-            {{ per_familia.fechaNac }}
-            {{ per_familia.dni }}
+            Nombre: <p>{{ per_familia.nombre }}</p>
+            Fecha de nacimiento: {{ per_familia.fechaNac }}
+            DNI: {{ per_familia.dni }}
             {% endfor %}
         </tr>
     </table>
