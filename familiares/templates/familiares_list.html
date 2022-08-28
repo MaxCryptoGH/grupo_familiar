@@ -9,9 +9,9 @@
 <body>
     Lista de familiares:
     {% for per_familia in familiares %}
-    <p>{{ per_familia.nombre }}</p>
-    {{ per_familia.fechaNac }}
-    {{ per_familia.dni }}
+    {{ "Nombre": per_familia.nombre }}
+    {{ "Fecha de Nac" per_familia.fechaNac }}
+    {{ "DNI" per_familia.dni }}
 
     {% endfor %}
 </body>
